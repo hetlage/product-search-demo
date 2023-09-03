@@ -1,0 +1,33 @@
+# Python related:
+*.pyc
+*.pyo
+*.egg-info
+*.cache
+*.log
+*.db
+__pycache__/
+*.venv/
+*.pytest_cache/
+
+# Node related:
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker related:
+*.env
+.dockerenv
+
+# OS related:
+.DS_Store
+Thumbs.db
+
+# IDEs and text editors:
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# MongoDB:
+mongodump/
