@@ -1,5 +1,6 @@
 from marshmallow import Schema, fields, validate
 
+
 # Schema for User Analytics collection
 class UserAnalyticsSchema(Schema):
     _id = fields.Str(required=True)
@@ -8,6 +9,6 @@ class UserAnalyticsSchema(Schema):
     search_location = fields.Dict(
         required=True,
         keys=fields.Str(validate=validate.OneOf(["latitude", "longitude"])),
-        values=fields.Float()
+        values=fields.Float(),
     )
     timestamp = fields.DateTime(required=True)

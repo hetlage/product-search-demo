@@ -2,6 +2,7 @@ import pytest
 
 from app.schemas.product_schema import ProductSchema
 
+
 def test_valid_product_schema():
     data = {
         "_id": "product1",
@@ -9,12 +10,13 @@ def test_valid_product_schema():
         "category": "Electronics",
         "description": "Latest model of the Apple iPhone",
         "price": 999.99,
-        "image_url": "http://example.com/image.jpg"
+        "image_url": "http://example.com/image.jpg",
     }
 
     errors = ProductSchema().validate(data)
 
     assert errors == {}
+
 
 def test_invalid_product_schema():
     data = {

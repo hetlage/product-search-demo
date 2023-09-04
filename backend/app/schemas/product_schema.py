@@ -1,5 +1,6 @@
 from marshmallow import Schema, fields, validate
 
+
 # Schema for Products collection
 class ProductSchema(Schema):
     _id = fields.Str(required=True)
