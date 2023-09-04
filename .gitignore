@@ -31,3 +31,7 @@ Thumbs.db
 
 # MongoDB:
 mongodump/
+
+# Local dev config:
+.flake8
+pyproject.toml
