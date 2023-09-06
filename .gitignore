@@ -10,6 +10,7 @@ __pycache__/
 *.pytest_cache/
 
 # Node related:
+coverage/
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -31,3 +32,7 @@ Thumbs.db
 
 # MongoDB:
 mongodump/
+
+# Local dev config:
+.flake8
+pyproject.toml

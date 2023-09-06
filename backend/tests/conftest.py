@@ -2,13 +2,15 @@ import pytest
 
 from app import create_app
 
+
 @pytest.fixture()
 def app():
     app = create_app()
     with app.app_context():
-        pass #TODO - Add and remove seed data from mongodb
+        pass
 
     yield app
+
 
 @pytest.fixture()
 def client(app):
